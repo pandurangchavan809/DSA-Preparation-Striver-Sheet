@@ -1,0 +1,62 @@
+================ DSA C++ RULES =================
+
+#include<bits/stdc++.h>    :- this include all the liabraries c++ have... it takes bit more time but that's ok.
+
+1) Compile a single C++ file
+   g++ filename.cpp -o filename
+
+2) Run executable (PowerShell)
+   .\filename
+
+3) Compile with warnings (recommended)
+   g++ filename.cpp -Wall -o filename
+
+4) Compile & run (one line)
+   g++ filename.cpp -o filename ; .\filename
+
+5) Multiple C++ files
+   g++ main.cpp helper.cpp -o main
+
+6) Input from file
+   .\main < input.txt
+
+7) Output to file
+   .\main > output.txt
+
+8) Compile with C++17 standard
+   g++ filename.cpp -std=gnu++17 -o filename
+
+9) Debug build
+   g++ filename.cpp -g -o filename
+
+10) Clean executable
+   del filename.exe
+
+================================================
+⭐ Optional (VERY USEFUL): Auto compile & run shortcut :
+
+g++ main.cpp -o main ; .\main
+================================================
+Recommended DSA folder structure (BEST PRACTICE)
+
+DSA_Striver
+│── rules.txt
+│
+├── Arrays
+│   ├── two_sum.cpp
+│
+├── Recursion
+│   ├── factorial.cpp
+│
+├── LinkedList
+│   ├── reverse_ll.cpp
+│
+└── main.cpp
+
+Run any file like:
+
+g++ Recursion\factorial.cpp -o fact
+.\fact
+
+means :  g++ subfoldername\filename.cpp -o filename(alias)
+    .\filename
