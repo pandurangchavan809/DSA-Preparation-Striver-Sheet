@@ -2,7 +2,7 @@
 using namespace std;
 
 // tc - O(N) and Sc- O(1)
-// delete the node in the linked list 
+// delete the node in the linked list 1d
 
 // class Solution {
 // public:
