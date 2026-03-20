@@ -3,13 +3,12 @@ using namespace std;
 
 //  Add 2 numbers represneted as linked list :
 
-
 // Time Complexity: O(max(m,n)). Assume that m and n represent the length of l1 and l2 respectively, the algorithm above iterates at most max(m,n) times.
 
 // Space Complexity: O(max(m,n)). The length of the new list is at most max(m,n)+1.
 
 
-// Definition for singly-linked list.
+// Definition for singly-linked list
 struct ListNode {
    int val;
    ListNode *next;
