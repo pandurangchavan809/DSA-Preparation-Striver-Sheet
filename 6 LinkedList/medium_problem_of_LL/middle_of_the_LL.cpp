@@ -7,7 +7,7 @@ using namespace std;
 
 //  time complexity linear, or O(N/2) ~ O(N).  Sc- O(1)
 
-// Definition for singly-linked list.
+// Definition for singly-linked list
 struct ListNode {
    int val;
    ListNode *next;
