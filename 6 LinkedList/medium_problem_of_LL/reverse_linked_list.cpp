@@ -3,8 +3,7 @@ using namespace std;
 
 // Reverse a LinkedList :
 
-// Optimizes  (not recursive method in these question as at end taken)
-
+// Optimizes  (not recursive method in these question as at end taken)...uses iterative method
 
 
 struct ListNode {
