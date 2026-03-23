@@ -37,6 +37,6 @@ int lengthOfLoop(ListNode* head){
 }
 
 
-// Time Complexity :- 
+// Time Complexity :- Time Complexity: O(N), we traverse the entire linked list atleast once to find the length of the loop.
 
 // Space Complexity :- O(1) constant extra space. No additional data structures are used, only two pointers.
