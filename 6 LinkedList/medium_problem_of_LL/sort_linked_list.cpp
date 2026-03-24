@@ -10,7 +10,7 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-// Sort a Linked List :
+// Sort a Linked List : Optimal Solution
 
 ListNode* findMiddle(ListNode* head){
     ListNode* slow = head;
@@ -54,3 +54,8 @@ ListNode* sortLL(ListNode* head){
     right = sortLL(right);
     return mergeTwoLists(left, right);
 }
+
+
+// Time Complexity: O(N*LogN), we recursively divide the linked list into two halves and then merge two sorted halves.
+
+// Space Complexity: O(1) , constant additional space is required to sort the entire linked list.
