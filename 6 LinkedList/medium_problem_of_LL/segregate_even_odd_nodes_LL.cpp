@@ -39,7 +39,7 @@ public:
         odd->next = evenHead;
         return head;
     }
-}
+};
 
 // Time Complexity: O(n), We traverse the entire linked list only once to rearrange the nodes. Each node is visited exactly once. No nested traversal or re-traversal occurs. Hence, linear time in terms of the number of nodes n.
 
