@@ -43,5 +43,5 @@ vector<pair<int, int>>findpairs(ListNode* head, int k){
 }
 
 
-// Tc- O(2N)
+// Time complexity - O(2N)
 // Sc - O(1)
