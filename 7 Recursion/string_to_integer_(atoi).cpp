@@ -19,7 +19,7 @@ public:
 
         // Convert digits
         while(i < n && isdigit(s[i])){
-            num = num * 10 + (s[i] - '0');  # this gives integer
+            num = num * 10 + (s[i] - '0');  // this gives integer
 
             // Clamp overflow
             if(sign * num > INT_MAX) return INT_MAX;
