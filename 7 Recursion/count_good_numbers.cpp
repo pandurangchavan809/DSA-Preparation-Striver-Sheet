@@ -34,3 +34,8 @@ public:
         return (int)ans;
     }
 };
+
+
+
+// O(log n)  and sc - O(1)
+
