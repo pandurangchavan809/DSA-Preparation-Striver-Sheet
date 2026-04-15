@@ -7,7 +7,7 @@ bool isOperator(char c) {
     return (!isalpha(c) && !isdigit(c));  // If the character is neither alphabetic nor numeric, it's an operator
 }
 
-// Function to return the precedence of operators
+// Function to return the precedence ofoperators
 int getPriority(char C) {
     if (C == '-' || C == '+')  // Addition and subtraction have lowest precedence
         return 1;
