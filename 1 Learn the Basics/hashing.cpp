@@ -5,7 +5,7 @@
 // but if it is declared globally 10^7 later that we have another methods to use.  Maps --> hash map, undefined map
 
 
-# include<iostream>
+#include<iostream>
 using namespace std;
 
 int main(){
@@ -60,8 +60,78 @@ int main(){
 }
 
 
-// Mapas :  map<int, int>mpp; ... map<long, long>mbb; depending on the length we use int, long, long long.
+// Map :  map<int, int>mpp; ... map<long, long>mbb; depending on the length we use int, long, long long.
 // unordered_map<int, int>mpp;
+
+// map stored all valued in the sorted order 
+// unordered map stored without any order
+
+
+
+// Q.1 - Counting Frequencies of each element in the array :
+
+#include <bits/stdc++.h>
+
+// Function to count frequency of each element in the array using unordered_map
+void Frequency(int arr[], int n) {
+    // Create an unordered_map to store frequency of each element
+    unordered_map<int, int> map;
+
+    // Traverse the array and count frequencies
+    for (int i = 0; i < n; i++) {
+        map[arr[i]]++;
+    }
+
+    // Traverse through the unordered_map and print frequencies
+    for (auto x : map) {
+        cout << x.first << " " << x.second << endl;
+    }
+}
+
+
+// Q. Find the highest/lowest frequency element
+
+
+// Class to count frequencies using unordered_map (hash table)
+class FrequencyCounter {
+public:
+    void Frequency(int arr[], int n)
+    {
+        unordered_map<int, int> map; // Stores frequency of each element
+
+        // Count frequencies of all elements
+        for (int i = 0; i < n; i++)
+            map[arr[i]]++;
+
+        int maxFreq = 0, minFreq = n;
+        int maxEle = 0, minEle = 0;
+
+        // Traverse the map to find elements with max and min frequencies
+        for (auto it : map) {
+            int element = it.first;
+            int count = it.second;
+
+            // Update max frequency element
+            if (count > maxFreq) {
+                maxFreq = count;
+                maxEle = element;
+            }
+
+            // Update min frequency element
+            if (count < minFreq) {
+                minFreq = count;
+                minEle = element;
+            }
+        }
+
+        // Print results
+        cout << "The highest frequency element is: " << maxEle << "\n";
+        cout << "The lowest frequency element is: " << minEle << "\n";
+    }
+};
+
+
+
 
 
 int main(){
